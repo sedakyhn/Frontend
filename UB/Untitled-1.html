@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+    <title>Alaturka Pansiyon</title>
+    <link rel="shortcut icon" href="https://images.ucuzabilet.com/resources/img/icons/favicon.ico" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/scss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <!--Script-->
+    <script src="js/js.main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/78a81832f4.js" crossorigin="anonymous"></script>
+    
+    </head>
+    <body>
+        <!--Navbar-->
+        <div class="m-4">
+            <nav class="navbar navbar-expand-sm navbar-light bg-white">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="images/ub-ets-logo.png" alt="#" width="214" height="50"/></a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fa fa-plane" aria-hidden="true"></i>UÇAK</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fa fa-bed" aria-hidden="true"></i>OTEL</a>
+                            </li>    
+                        </ul>
+                        <ul class="nav navbar-nav ms-auto">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Online İşlemler</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Item 1</a>
+                                    <a href="#" class="dropdown-item">Item 2</a>
+                                    <a href="#" class="dropdown-item">Item 3</a> 
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fa fa-user" aria-hidden="true"></i>Giriş Yap/Üye Ol</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><img src="images/turkey.png" style="width:16px;">TRY</a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a href="#" class="dropdown-item">EN</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>    
+        </div>
+        <!--Navbar End-->
+
+        <!--Title-->
+        <div class="container">
+            <div>
+                <div class="row header">
+                    <div class="col">
+                        <h2>Alaturka Pansiyon</h2>
+                    </div>
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="anasayfa">Anasayfa</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="antalya-otelleri">Antalya Otelleri</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="goynuk-otelleri">
+                                        Göynük Otelleri
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item active" 
+                                    aria-current="page">
+                                    Alaturka Pansiyon
+                                </li>
+                            </ol>
+                        </nav>    
+                    </div>
+                    <div class="col share">
+                        <a href="#"><i class="fa fa-heart"></i>Beğen</a>
+                        <a href="#"><i class="fa fa-share"></i>Paylaş</a>    
+                    </div>
+                </div>
+                <div class="location">
+                    <div>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Kemer Göynük, Antalya</a>
+                </div>
+            </div>     
+        </div>
+        <!--Title End-->
+
+        <!--Image Grid-->
+        <div class="image-grid">
+            <img id="myImg" class="image-grid-col-2 image-grid-row-2" src="images/otel.jpg" alt="..">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            <img id="myImg" class="image-grid-col-2" src="images/agency.jpg">
+            <img id="myImg" src="images/oda3.jpg">
+            <img id="myImg" src="images/pic3.jpg">
+        </div>
+        <!--Image Grid End-->
+        
+        <!--Hotel Room Tab Navs-->
+        <div class="row">
+            <div class="col">
+                <div class="tab">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#Section1">Oda Seçenekleri</a></li>
+                        <li><a href="#Section2">Genel Bilgi</a></li>
+                        <li><a href="#Section3">Tesis Olanakları</a></li>
+                        <li><a href="#Section4">Detaylı Bilgi</a></li>
+                        <li><a href="#Section5">Yorumlar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Hotel Room Tab Navs End-->
+
+        <!-- Check-in Check-out Details-->
+        <div class="city justify-content-center">
+            <div class="city-country">
+                <h5>Kemer</h5>
+                <p>Antalya, Türkiye</p>
+            </div>
+            <div class="date">
+                <input type="date" placeholder="Cehck-in Date">
+                <input type="date" placeholder="Cehck-out Date">    
+            </div> 
+            <div class="day">
+                <label><i class="fa fa-moon-o"></i></label>
+                <p>
+                    4 Gece
+                </p>
+            </div>
+            <div class="person">
+                <select class="select">
+                    <option disabled selected>3 Kişi</option>
+                    <option value="one">1 Kişi</option>
+                    <option value="two">2 Kişi</option>
+                    <option value="three">3 Kişi</option>
+                    <option value="four">4 Kişi</option>
+                    <option value="five">5 Kişi</option>
+                    <option value="six">6 Kişi</option>
+                </select>
+            </div>
+            <div class="btn-search">
+                <button class="btn" type="submit">ARA</button>
+            </div>          
+        </div>
+        <!-- Check-in Check-out Details End-->
+
+        <!--Information Details-->
+        <div id="Section2" class="container">
+            <div id="Section2" class="container">
+                <h2>Genel Bilgi</h2>
+            </div>
+            <div class="info row container">
+                <div class="col">
+                    <div class="container">
+                        <div>
+                            <ul>
+                                <li><i class="fa fa-water-ladder"></i></i>Çocuk Havuzu</li>
+                                <li><i class="fa fa-umbrella-beach"></i>Özel Plaj</li>
+                                <li><i class="fa fa-water"></i>Denizi Kum</li>
+                                <li><i class="fa fa-check"></i>Güvenli Turizm Sertifikalı Otel</li>
+                            </ul>
+                        </div> 
+                    </div> 
+                    <div class="container information">
+                        <div>
+                            <p>Havalimanına uzaklığı yaklaşık 90 km’dir. Antalya'nın huzurlu ve sakin beldesi Olimpos'ta konuklarını ağırlayan Alaturca Pansiyon plaja 1,5 km mesafededir..<br><br>
+                                 Etrafı dağlarla kuşatılmış, köklü uygarlıklara tanık olmuş ve bir dönem korsanlara ev sahipliği yapmış,sönmeyen ateşine efsaneler yazılmış Olympos 'ta kurulu olan Alaturka Pansiyon geniş bir alana yayılmış Akdeniz’e özgü bitki örtüsüyle çevrilmiş mükemmel bir tatil cennetidir. <br><br>
+                                 Doğa ile tarihin iç içe geçtiği, ormanın yeşilini, Akdeniz'in berraklığını cömertçe sundugu Olympos'ta portakal ağaçları arasında kurulmuştur pansiyonumuz. Huzurlu ve dinlendirici ortamı, otantik mimarisiyle siz değerli konuklarını beklemektedir.</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col">
+                        <div class="note">
+                            <i class="fa fa-check"></i>Güvenli Turizm Sertifikalı Tesis<i class="fa-solid fa-circle-info"></i>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="map-area">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3211.8185997216583!2d30.45792101527829!3d36.389385180035184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c236ea43243e19%3A0x6e0f980171e65023!2sOlympos%20Alaturka%20Pansiyon!5e0!3m2!1str!2str!4v1664383068937!5m2!1str!2str" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </div>
+        <!--Information Details End-->
+        
+        <!-- Room Details Card-->
+        <div class="container room">
+            <div id="Section1" class="container">
+                <h2>Oda Seçenekleri</h2>
+            </div>
+            <div class="container">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/oda1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col">
+                            <div class="card-body">
+                                <h5 class="card-title">Superior Kara Manzaralı</h5>
+                                <p class="card-text">
+                                    <ul>
+                                        <li><i class="fa fa-water-ladder"></i>Çift kişilik tek geniş yatak</li>
+                                        <li><i class="fa fa-umbrella-beach"></i>3 kişilik</li>
+                                        <li><i class="fa fa-water"></i>80 m2</li>    
+                                    </ul>
+                                </p>
+                                <a class="card-text" href="#"><small class="text-muted">Detaylı Oda Bilgisi <i class="fa fa-arrow-right"></i></small></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col three">
+                                    <p class="card-text">
+                                        <ul>
+                                            <li><i class="fa fa-utensils"></i>Oda Kahvaltı</li>
+                                            <li class="border"><i class="fa fa-child"></i>0-6 Yaş 1 Çocuk Ücretsiz</li>
+                                            <li class="border"><i class="fa fa-check"></i>Ücretsiz İptal</li>    
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="col price">
+                                    <p>3 Gece İçin Toplam</p>
+                                    <h2>1900TL</h2>
+                                    <button class="button-13" role="button">ODAYI SEÇ</button>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>    
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/oda2.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col">
+                            <div class="card-body">
+                                <h5 class="card-title">Superior Family Plus</h5>
+                                <p class="card-text">
+                                    <ul>
+                                        <li><i class="fa fa-water-ladder"></i>Çift kişilik tek geniş yatak</li>
+                                        <li><i class="fa fa-umbrella-beach"></i>3 kişilik</li>
+                                        <li><i class="fa fa-water"></i>80 m2</li>
+                                    </ul>
+                                </p>
+                                <a class="card-text" href="#"><small class="text-muted">Detaylı Oda Bilgisi <i class="fa fa-arrow-right"></i></small></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col three">
+                                    <p class="card-text">
+                                        <ul>
+                                            <li><i class="fa fa-utensils"></i>Oda Kahvaltı</li>
+                                            <li class="border"><i class="fa fa-child"></i>0-6 Yaş 1 Çocuk Ücretsiz</li>
+                                            <li class="border"><i class="fa fa-check"></i>Ücretsiz İptal</li>    
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="col price">
+                                    <p>3 Gece İçin Toplam</p>
+                                    <h2>1900TL</h2>
+                                    <button class="button-13" role="button">ODAYI SEÇ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/oda4.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col">
+                        <div class="card-body">
+                            <h5 class="card-title">Deniz Manzaralı</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li><i class="fa fa-water-ladder"></i>Çift kişilik tek geniş yatak</li>
+                                    <li><i class="fa fa-umbrella-beach"></i>3 kişilik</li>
+                                    <li><i class="fa fa-water"></i>80 m2</li>   
+                                </ul>
+                            </p>
+                            <a class="card-text" href="#"><small class="text-muted">Detaylı Oda Bilgisi <i class="fa fa-arrow-right"></i></small></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col three">
+                                <p class="card-text">
+                                    <ul>
+                                        <li><i class="fa fa-utensils"></i>Oda Kahvaltı</li>
+                                        <li class="border"><i class="fa fa-child"></i>0-6 Yaş 1 Çocuk Ücretsiz</li>
+                                        <li class="border"><i class="fa fa-check"></i>Ücretsiz İptal</li>   
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="col price">
+                                <p>3 Gece İçin Toplam</p>
+                                <h2>1900TL</h2>
+                                <button class="button-13" role="button">ODAYI SEÇ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Room Details Card End -->
+
+        <!--Accordion-->
+        <div id="Section4" class="container">
+            <div class="container">
+                <h2>Tesis Olanakları</h2>
+            </div>
+            <div class="accordion2 row">
+                <div class="col">
+                    <button class="accordion"><i class="fa fa-arrows" aria-hidden="true"></i> BÜYÜKLÜK BİLGİSİ</button>
+                    <div class="panel">
+                        <p>1.040.500 m2 alan üzerine kurulu tesisin, 531 odası bulunuyor. </p>                    
+                    </div>
+                </div>
+                <div class="col">
+                    <button class="accordion"><i class="fa-solid fa-person-swimming"aria-hidden="true"></i>DENİZ&HAVUZ</button>
+                    <div class="panel">
+                        <p>Mavi Bayraklı <br>
+                            Kum Plaj <br>
+                            Açık Havuz <br>
+                            Kapalı Havuz <br>
+                            Çoçuk Havuzu <br>
+                            Kapalı Çoçuk Havuzu </p>    
+                    </div>
+                </div>
+            </div>
+            <div class="accordion2 row">     
+                <div class="col">
+                    <button class="accordion"><i class="fa-solid fa-ring"aria-hidden="true"></i>BALAYI</button>
+                    <div class="panel">
+                        <p>Konaklama boyunca 1 defa odaya kahvaltı servisi <br>
+                            Giriş gününde odaya çikolata tabağı ikramı<br>
+                            Giriş gününde odaya zengin türk tatlı tabağı ikramı <br>
+                            Giriş gününde odaya şampanya ikramı <br>
+                            Özel tasarım şampanya kadehleri (Mr. & Mrs.)<br>
+                            Çubuk Bıyık/Dudak Totemleri<br>
+                            Oda Süslemesi <br>
+                            Özel tasarım bornoz (Mr. & Mrs.)<br>
+                            Odaya kart gönderimi <br>
+                            Spa & pavilion rezervasyonlarında %10 özel indirim
+                        </p>    
+                    </div>
+                </div>
+                <div class="col">
+                    <button class="accordion"><i class="fa fa-cutlery" aria-hidden="true"></i>YEME&İÇME</button>
+                    <div class="panel">
+                        <p><strong>07.00-10.00</strong>  Kahvaltı<br>
+                            <strong>10.00-11.00</strong>  Geç Kahvaltı<br>
+                            <strong>11.00-22.00</strong>  Pastane<br>
+                            <strong>12.30-16.00</strong>  Snack Menü (Food Park)<br>
+                            <strong>12.30-14.30</strong>  Öğle Yemeği <br>
+                            <strong>12.30-16.00</strong>  Donut House<br>
+                            <strong>12.30-16.00</strong>  Aqua Snack<br>
+                            <strong>12.30-18.00</strong>  Dondurma<br>
+                            <strong>12.30-18.00</strong>  Waffle<br>
+                            <strong>12.30-18.00</strong>  Gözleme (Beach Snack)<br>
+                            <strong>18.30-21.00</strong>  Akşam Yemeği<br>
+                            <strong>19.00-22.00</strong>  A la Carte Restoranlar<br>
+                            <strong>20.45-00.00</strong>  Tomorrow Land Bar<br>
+                            <strong>00.00-03.00</strong>  Gece Büfesi
+                        </p>     
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Accordion End-->
+
+        <!-- The Modal Script -->
+        <script>
+            var modal = document.getElementById("myModal");
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            }
+
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function() { 
+            modal.style.display = "none";
+            }
+        </script>
+
+        <!-- Accordion Script -->
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active1");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+                } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+            }
+        </script>
+
+        
+        <script src="js/js.main.js"></script>
+    
+
+    </body>
+</html>
